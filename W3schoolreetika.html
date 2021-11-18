@@ -1,0 +1,428 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3School</title>
+    <link rel="icon" type="image/x-icon" href="fevicon.ico">
+    <link rel="stylesheet" href="stylesheetreetika.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="d1">
+            <img class="logo" src="data:image/png;base64,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" alt="w3 logo">
+
+            <a class="link1" href="">Tutorials &#9662;</a>
+            <a class="link1" href="">References &#9662;</a>
+            <a class="link1" href="">Exercises &#9662;</a>
+            <a class="link1" href="">Videos  <span>New</span></a> 
+        </div>
+        <div class="d2">
+            <a class="link21" href=""><i class="fas fa-adjust"></i></a>
+            <a class="link21" href=""><i class="fas fa-globe-asia"></i></a>
+            <a class="link21" href=""><i class="fas fa-search"></i></a>
+            <a class="link22" href="">Website   <span>New</span></a>
+            <a class="link23" href="">Paid Courses</a>
+            <a class="link24" href="">Login</a>
+        </div>
+    </div>
+    <div class="body1">
+       <div class="i1">
+           <h1 class="heading1">HTML</h1>
+           <h3 class="heading2">The language for building web pages</h3>
+            <a class="learn" href="">Learn HTML</a>
+            <a class="video" href="">Video Tutorial<span>New</span></a>
+            <a class="refer" href="">HTML Reference</a>
+        </div>
+        <div class="i2">
+           <div class="inner1"> 
+               <h2 id="r1">  HTML Example:</h2>
+               <div class="inner2">
+                   <pre>
+                    &lt; !DOCTYPE html &gt;
+                    &lt;html&gt;
+                    &lt;title&gt;HTML Tutorial&lt;/title&gt;
+                    &lt;body&gt;
+                    
+                    &lt;h1&gt;This is a heading&lt;/h1&gt;
+                    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                    
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                   </pre>
+               </div>
+               <a id="r2" href="">Try it Yourself</a>
+           </div>
+        </div>
+    </div>
+    <div class="body2">
+        <div class="i1">
+            <h1 class="h1">CSS</h1>
+            <h3 class="h2">The language for styling web pages</h3>
+             <a class="b1" href="">Learn CSS</a>
+             <a class="b2" href="">CSS Reference</a>
+        </div>
+         <div class="i2">
+            <div class="inner3"> 
+                <h2 id="r1">  CSS Example:</h2>
+                <div class="inner4">
+                    <pre>
+                        body {
+                            background-color: lightblue;
+                          }
+                          
+                          h1 {
+                            color: white;
+                            text-align: center;
+                          }
+                    </pre>
+                </div>
+                <a id="r2" href="">Try it Yourself</a>
+ 
+            </div>
+         
+         </div>
+    </div>
+    <div class="body3">
+        <div class="i1">
+            <h1 class="h1">JavaScript</h1>
+            <h3 class="h2">The language for programming web pages</h3>
+             <a class="b1" href="">Learn Javascript</a>
+             <a class="b2" href="">JavaScript Reference</a>
+        </div>
+        <div class="i2">
+            <div class="inner3"> 
+                <h2 id="r1">  JavaScript Example:</h2>
+                <div class="inner4">
+                <pre>
+            &lt;button onclick="myFunction()"&gt;Click Me!&lt;/button&gt;
+
+            &lt;script&gt;
+                function myFunction() {
+                let x = document.getElementById("demo");
+                x.style.fontSize = "25px";
+                x.style.color = "red";
+                }
+            &lt;/script&gt;
+                </pre>
+                </div>
+                <a id="r2" href="">Try it Yourself</a>
+ 
+            </div>
+         
+        </div>
+    </div>
+    <div class="body1">
+        <div class="i1">
+            <h1 class="heading1">Python</h1>
+            <h3 class="heading2">A popular programming language</h3>
+             <a class="b1" href="">Learn Python</a>
+             <a class="b3" href="">Python Reference</a>
+        </div>
+        <div class="i2">
+            <div class="inner3"> 
+                <h2 id="r1">  Python Example:</h2>
+                <div class="inner4">
+                    <pre>
+
+        if 5 > 2:
+            print("Five is greater than two!")
+                    </pre>
+                </div>
+                <a id="r2" href="">Try it Yourself</a>
+ 
+            </div>
+         
+        </div>
+    </div>
+    <div class="body4">
+        <div class="i1">
+            <h1 class="h1">SQL</h1>
+            <h3 class="h2">A language for accessing databases</h3>
+             <a class="b1" href="">Learn SQL</a>
+             <a class="b2" href="">SQL Reference</a>
+         </div>
+         <div class="i2">
+            <div class="inner3"> 
+                <h2 id="r1">  SQL Example:</h2>
+                <div class="inner4">
+                    <pre>
+                
+        SELECT * FROM Customers
+        WHERE Country='Mexico';
+                    </pre>
+                </div>
+                <a id="r2" href="">Try it Yourself</a>
+ 
+            </div>
+         
+         </div>
+    </div>
+    
+    <div class="body5">
+        <div class="maindiv1">
+             <div class="div1">
+                   <h1 id="id1">PHP</h1>
+                   <h3 class="h2">A web server programming language</h3>
+                   <a class="b2" href="">Learn PHP</a>
+             </div>
+             <div class="div2">
+                <h1 id="id1">Java</h1>
+                <h3 class="h2">A programming language</h3>
+                <a class="b2" href="">Learn Java</a>
+             </div>
+             <div class="div3">
+                <h1 id="id1">W3.CSS</h1>
+                <h3 class="h2">A CSS framework for faster and better responsive web pages</h3>
+                <a class="b21" href="">Learn W3.CSS</a>
+             </div>
+             <div id="id2">
+                 <div class="div4">
+                      <h2 id="id3">C#</h2>
+                 </div>
+                 <div class="div5">
+                       <h2 id="id3">R</h2>
+                 </div>
+             </div>
+             <div id="id2">
+                <div class="div6">
+                    <h2 id="id3">NodeJS</h2>
+                </div>
+                <div class="div7">
+                <h2 id="id3">React</h2>
+              </div>
+             </div>
+
+             <div id="id2">
+                <div class="div8">
+                    <h2 id="id3">W3.JS</h2>
+                </div>
+                <div class="div9">
+                <h2 id="id3">XML</h2>
+              </div>
+             </div>
+
+            <div id="id2">
+                <div class="div10">
+                    <h2 id="id3">RWD</h2>
+                </div>
+                <div class="div11">
+                <h2 id="id3">Graphics</h2>
+                </div>
+            </div>
+            <div id="id2">
+                <div class="div6">
+                    <h2 id="id3">Raspberry Pi</h2>
+                </div>
+                <div class="div15">
+                <h2 id="id3">Cyber</h2>
+                </div>
+            </div>
+            <div id="id2">
+                <div class="div14">
+                    <h2 id="id3">Matplotlib</h2>
+                </div>
+                <div class="div9">
+                <h2 id="id3">NumPy</h2>
+                </div>
+            </div>
+            <div id="id2">
+                <div class="div16">
+                    <h2 id="id3">ASP</h2>
+                </div>
+                <div class="div17">
+                <h2 id="id3">Accessibility</h2>
+                </div>
+            </div>
+            <div class="i4"> 
+                <h2>Excel</h2>
+            </div>
+            <div class="i5"> 
+                <h2>Machine Learning</h2>
+            </div>
+            <div class="i6"> 
+                <h2>Statistics</h2>
+            </div>
+        </div>
+
+        <div class="maindiv1">
+            <div class="divi1">
+                  <h1 id="id1">jQuery</h1>
+                  <h3 class="h2">A JS library for developing web pages</h3>
+                  <a class="b2" href="">Learn jQuery</a>
+            </div>
+            <div class="divi2">
+               <h1 id="id1">C++</h1>
+               <h3 class="h2">A programming language</h3>
+               <a class="b2" href="">Learn C++</a>
+            </div>
+            <div class="divi3">
+               <h1 id="id1">Bootstrap</h1>
+               <h3 class="h2">A CSS framework for designing better web pages</h3>
+               <a class="b21" href="">Learn BS3</a>
+               <a class="b22" href="">Learn BS4</a>
+               <a class="b22" href="">Learn BS5</a>
+            </div>
+            <div id="id2">
+                <div class="div18">
+                     <h2 id="id3">Kotlin</h2>
+                </div>
+                <div class="div19">
+                      <h2 id="id3">MySQL</h2>
+                </div>
+            </div>
+            <div id="id2">
+               <div class="div12">
+                   <h2 id="id3">JSON</h2>
+               </div>
+               <div class="div11">
+               <h2 id="id3">AngularJS</h2>
+             </div>
+            </div>
+
+            <div id="id2">
+               <div class="div14">
+                   <h2 id="id3">Sass</h2>
+               </div>
+               <div class="div15">
+               <h2 id="id3">Icons</h2>
+             </div>
+            </div>
+
+           <div id="id2">
+               <div class="div6">
+                   <h2 id="id3">SVG</h2>
+               </div>
+               <div class="div7">
+               <h2 id="id3">Canvas</h2>
+               </div>
+           </div>
+           <div id="id2">
+               <div class="div8">
+                   <h2 id="id3">Colors</h2>
+               </div>
+               <div class="div9">
+               <h2 id="id3">GIT</h2>
+               </div>
+           </div>
+           <div id="id2">
+               <div class="div10">
+                   <h2 id="id3">Pandas</h2>
+               </div>
+               <div class="div11">
+               <h2 id="id3">SciPy</h2>
+               </div>
+           </div>
+            <div id="id2">
+               <div class="div6">
+                   <h2 id="id3">AppML</h2>
+               </div>
+               <div class="div15">
+               <h2 id="id3">Go</h2>
+               </div>
+            </div>
+            <div class="i7"> 
+               <h2>Google Sheets</h2>
+            </div>
+            <div class="i8"> 
+               <h2>Artificial Intelligence</h2>
+            </div>
+            <div class="i9"> 
+               <h2>Data Science</h2>
+            </div>
+           
+        </div>
+    </div>
+    <div class="ce">
+        <h1 class="ce1">Code Editor</h1>
+        <h3 class="ce2">With our online code editor, you can edit code and view the result in your browser        </h3>
+        <div class="editor">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <div class="www">
+                <h6 id="www2">www.w3schools.com/tryit/</h6>
+            </div>
+        </div>
+        <div class="editor">
+             <a class="c1" href=""><b>Frontend</b></a>
+             <a class="c2" href=""><b>Backend</b></a>
+        </div>
+        <img src="https://www.w3schools.com/codeeditor.gif" alt="">
+        <div class="b">
+            <a class="bt1">Try Frontend Editor (HTML/CSS/JS) </a>
+            <a class="bt2">Try Backend Editor (Python/PHP/Java..)</a>
+        </div>
+        
+    </div>
+    
+    <div class="body6">
+        <h1 class="h6   ">Color Picker</h1>
+        <h3 class="h2">W3Schools' famous color picker</h3>
+        <img src="https://www.w3schools.com/images/colorpicker.png" alt="">
+    </div>
+    <div class="body7">
+        <h1 class="h4">Code Game</h1>
+        <h2 class="h5">Help the Lynx collect pine cones!</h2>
+        <img src="https://www.w3schools.com/images/w3lynx_200.png" alt="">
+         <a class="game" href="">Play Game</a>
+    </div>
+    <div class="body8">
+        <h2 class="ce3">Exercises and Quizzes</h2>
+        <h3 class="ce2">Test your skills!</h3>
+        <div class="divide">
+            <a class="divide1" href="">Exercises</a>
+            <a class="divide2" href="">Quizzes</a>
+        </div>
+    </div>
+    <div class="body9">
+         <h2 class=ce4>Web Templates</h2>
+         <h3 class="c5">Browse our selection of free responsive HTML Templates</h3>
+        <img id="im" src="https://www.w3schools.com/w3css_templates.jpg" alt="">
+        <a id="l" href="">Browse Templates</a>
+    </div>
+    <div class="body10">
+      <div class="l1">Kickstart your career</div>
+      <div class="l2">Get certified by completing a course</div>
+      <a id="bt3"href="">Get Started</a>
+      
+    </div>
+    <div class="body11">
+          <h2 class="ce4">How To Section</h2>
+          <p class="ce5">Code snippets for HTML, CSS and JavaScript</p>
+          <div class="ce6">For example, how to create a slideshow: </div>
+          <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="">
+          <div class="h"></div>
+          <a id="im2" href="https://www.w3schools.com/howto/default.asp">LEARN HOW TO</a>
+    </div>
+    <footer class="foot">
+        <div id="f">
+            <div>
+                <a id="f1" href="https://courses.w3schools.com/">COURSES</a>
+                <a id="f1"href="https://www.w3schools.com/quiztest/default.asp">QUIZZES</a>
+                <a id="f1"href="https://www.w3schools.com/exercises/index.php">EXERCISES</a>
+                <a id="f1"href="https://www.w3schools.com/spaces/index.html">SPACES</a>
+            </div>
+             <div>
+                 <a id="f2" href=""><pre>F O R U M | A B O U T</pre></a>
+            </div>
+             
+        </div>
+        <div id="ff" >
+            <a class="diag" href="https://www.facebook.com/w3schoolscom/"><i class="fab fa-facebook-square fa-20px"></i></a>
+            <a class="diag" href="https://www.instagram.com/w3schools.com_official/"><i class="fab fa-instagram"></i></a>
+            <a class="diag" href="https://www.linkedin.com/company/w3schools.com/"><i class="fab fa-linkedin"></i></a>
+             <a class="diag" href="https://discord.com/invite/6Z7UaRbUQM"><i class="fab fa-discord"></i></a>
+        </div>
+        
+        <p class="ce7">W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy.
+            Copyright 1999-2021 by Refsnes Data. All Rights Reserved.</p>
+        <a id="like" href=""><i class="far fa-thumbs-up"></i></a>
+        <a id="shop" href="">W3SCHOOLS SHOP</a>    
+    </footer>
+</body>
+</html>
